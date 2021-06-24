@@ -69,12 +69,8 @@ public class InitClassifiers {
                     LibSVM libsvm = (LibSVM) Class.forName(classifierPath).newInstance();
                     String Gamma = foo.element("parameter").elementText("Gamma").trim();
                     String Cost = foo.element("parameter").elementText("Cost").trim();
-                    System.out.println("bbbbbbblibsvm gamma" + libsvm.getGamma());
-                    System.out.println("bbbbbbblibsvm cost" + libsvm.getCost());
                     libsvm.setGamma(Double.parseDouble(Gamma));
                     libsvm.setCost(Double.parseDouble(Cost));
-                    System.out.println("libsvm gamma" + libsvm.getGamma());
-                    System.out.println("libsvm cost" + libsvm.getCost());
                     lst.add(libsvm);
                     nameOfClassifiers.add(classifierName);
                     pathOfClassifiers.add(classifierPath);
