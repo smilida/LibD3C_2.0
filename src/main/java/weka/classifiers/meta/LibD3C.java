@@ -649,8 +649,7 @@ public class LibD3C extends RandomizableMultipleClassifiersCombiner implements T
         System.out.println(eval.toMatrixString());
     }
 
-    public static void main(String[] argv1) throws Exception {
-        String[] argv = {"-c", "5", "bupa.arff"};
+    public static void main(String[] argv) throws Exception {
         String TrainFilePath = null, cvNum = null, TestFilePath = null, modelPath = null, resultFilePath = null;
         boolean cross = false;
         boolean train = false;
