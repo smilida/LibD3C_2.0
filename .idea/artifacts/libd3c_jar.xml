@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="libd3c:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/libd3c_jar</output-path>
+    <root id="archive" name="new_libd3c.jar">
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/src/main/java/META-INF/MANIFEST.MF" />
+      </element>
+      <element id="module-output" name="new_libd3c" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../../../Maven/LocalWareHouse/log4j/log4j/1.2.12/log4j-1.2.12.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../../../Maven/LocalWareHouse/dom4j/dom4j/1.6.1/dom4j-1.6.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="$PROJECT_DIR$/../../../Maven/LocalWareHouse/nz/ac/waikato/cms/weka/weka-stable/3.8.5/weka-stable-3.8.5.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>
