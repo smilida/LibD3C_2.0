@@ -82,16 +82,8 @@ public class SelectiveEnsemble {
             }
         }
 
-        System.out.println("classifyRightOrWrong.size()"+classifyRightOrWrong.size());
-        System.out.println("classifyDistributeForInstances.size()"+classifyDistributeForInstances.size());
-        System.out.println("correctRateArray.size()"+correctRateArray.size());
-        System.out.println("classifyErrorNo.size()"+classifyErrorNo.size());
-        System.out.println("qqs.size()"+qqs.size());
-        System.out.println("bcfs.size()"+bcfs.size());
-        System.out.println("results.size()"+results.size());
-
         List<Integer> moveClassifierList = getWorseClassiferIndex(correctRateArray);
-        System.out.println("moveClassifierList.size()"+moveClassifierList.size());
+        //System.out.println("moveClassifierList.size()"+moveClassifierList.size());
         for(int n = moveClassifierList.size() - 1 ; n >= 0; n--){
             System.out.println(moveClassifierList.get(n));
             classifyRightOrWrong.remove((int)moveClassifierList.get(n));
@@ -101,10 +93,6 @@ public class SelectiveEnsemble {
             qqs.remove(moveClassifierList.get(n));
             bcfs.remove((int)moveClassifierList.get(n));
             results.remove((int)moveClassifierList.get(n));
-        }
-
-        for(int n = 0; n < correctRateArray.size(); n++){
-            System.out.println("!!!!!!!!"+correctRateArray.get(n));
         }
         System.out.println("基分类器单独训练完成!");
         return bcfs;
