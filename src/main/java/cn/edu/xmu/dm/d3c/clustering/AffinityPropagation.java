@@ -274,7 +274,7 @@ public class AffinityPropagation {
                         chooseID = j;
                         bestCorrectRate = correctRate;
                         whetherAdd[j] = 1;
-                        System.out.println("bestCorrectRate:" + bestCorrectRate);
+                        //System.out.println("bestCorrectRate:" + bestCorrectRate);
                     }
                 }
                 if (!chooseClassifiers.contains(chooseID)){
@@ -282,9 +282,9 @@ public class AffinityPropagation {
                 }
             }
             k++;
-            System.out.println("chooseClassifiers size: "+ chooseClassifiers.size());
+            //System.out.println("chooseClassifiers size: "+ chooseClassifiers.size());
         }
-        System.out.println("chooseClassifiers size: "+ chooseClassifiers.size());
+        //System.out.println("chooseClassifiers size: "+ chooseClassifiers.size());
 
     }
 
