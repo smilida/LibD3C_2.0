@@ -1,5 +1,5 @@
 # LibD3C_2.0
-Ensemble classifiers with a clustering and dynamic selection strategy and solve imbalance peoblem.  
+Ensemble classifiers with a clustering and dynamic selection strategy and solve imbalance problem.  
 
 LibD3C_2.0 is the upgrades for the software LibD3C_1.2.  
 
